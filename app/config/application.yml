@@ -1,0 +1,25 @@
+# ============================================================================
+# Enterprise AI Platform - Base Configuration
+# ============================================================================
+
+app:
+  name: enterprise-ai-platform
+  version: 1.0.0
+  environment: local
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: 1
+
+logging:
+  level: INFO
+  filename: enterprise-ai-platform
+  timestamp_format: "%Y%m%d_%H%M%S"
+  file_extension: log
+
+paths:
+  models: models/
+  logs: logs/
+  schemas: schemas/
+  monitoring: monitoring/
